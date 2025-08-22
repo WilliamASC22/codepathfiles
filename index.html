@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>Changemakers Expo</title>
+        <link rel="icon" href="./img/CodepathImage5.png">
+        <style>
+            /* Style rules go here. */
+            
+        </style>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+    
+        <!-- navbar
+
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [ ] Project 4 (REQUIRED FEATURE)
+        - [ ] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <div class="navbar-container">
+            <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><button id="theme-button"> Toggle Theme </button></li>
+            <li><button id="motion-button">Reduce Motion</button></li>
+            </ul>
+            
+        </div>
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <div class="header-container" id="home">
+            <div class="header-item">
+                <img id="header-img" alt="Image of a paper heart in a persons hands with a backround of the map of the world" 
+                    src="./img/CodepathImage5.png" width="300" height="275"/>
+                <h1>Changemakers Expo</h1>
+            </div>
+            <div class="header-item">
+                <h2>Spotlighting the organizations driving transformation</h2>
+                <button type="button" class="header-button">Register</button>
+                <button type="button" class="header-button">Veiw Organizations</button>
+            </div>
+        </div>
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="about">About the Event</h2>
+        <iframe src="https://www.youtube.com/watch?v=osCUTGkKVRg"></iframe>
+        <p>This event is designed to showcase a the organizations that are making an impact in the lives of many people.</p>
+        <p>Each organization will have its own booth where attendees can learn about the organizations mission, hear real stories of their visions for the future, and even donate directly to the organizations and support them. </p>
+        <p>This event is open to anyone who is interested in giving to those in need, learning more about nonprofit organizations, or discovering new ways to support their community and people around the world. </p>
+        <p>The aim of this event is to connect individual that are interested in philanthropy with organizations that are philanthropic.</p>
+
+        <h3>What to Expect</h3>
+        <h4>Learn more about the charities that make a difference. </h4>
+        <ul>
+            <li> <b>HopeBridge Foundation:</b> <i>Dedicated to global humanitarian aid.</i></li>
+            <li> <b>NextGen Scholars:</b> <i>Empowering underserved youth.</i></li>
+            <li> <b>GreenSpark Initiative:</b> <i>Focused on sustainable energy.</i></li>
+            <li> <b>Lifeline Horizon:</b> <i>Providing healthcare in rural communities.</i></li>
+            <li> <b>ShelterSeed:</b> <i>Building affordable housing.</i></li>
+            <li> <b>BrightPath Alliance:</b> <i>Connecting communities to digital access.</i></li>
+            <li> <b>Books for Brighter Days:</b> <i>Distributing books around the world.</i></li>
+            <li> <b>WellSpring Outreach:</b> <i>Delivering clean water.</i></li>
+            <li> <b>Clean Earth Collective:</b> <i>Promoting recycling.</i></li>
+            <li> <b>NeighborFirst Network:</b> <i>Supporting local volunteers.</i></li>
+        </ul>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="schedule">Event Schedule</h2>
+
+        <img alt="Photograph of attendees interacting with booths at a nonprofit showcase event." 
+            src="./img/CodepathImage1.png" width="300" height="275"/>
+        <h3>Event Activity 1</h3>
+        <p>Doors open for all attendees.</p>
+            
+        <img alt="Bar chart showing the estimated number of people helped by each organization at the event." 
+            src="./img/CodepathImage2.png" width="350" height="200"/>
+        <h3>Event Activity 2</h3>
+        <p>Attendees can visit different tables with representives of organizations where they can learn about the people that the organizations help.</p>
+
+        <!-- rsvp
+
+        Purpose:
+        - Section for users to sign up for the event
+        - Contains a form for users to input their information, 
+        and a list of other users who have signed up
+
+        When To Modify:
+        - [ ] Project 6 (REQUIRED FEATURE) 
+        - [ ] Project 6 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+        <div id="rsvp">
+            <h2>RSVP</h2>
+            <p id="rsvp-count">⭐ 3 people have RSVP'd to this event!</p>
+            
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <p>RSVP now to save your seat at the Changemakers Expo! 
+                        Sign up to attend, connect with nonprofits, and be part of the impact.</p>
+                </div>
+                <div class="rsvp-participants">
+                    <p>🎟️ Joe from United States has RSVP'd.</p>
+                    <p>🎟️ Kole from United States has RSVP'd.</p>
+                    <p>🎟️ Alexander from Canada has RSVP'd.</p>
+                </div>
+            </div>
+
+            <!--- Sign RSVP Form --->
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="interest">Area of Interest:</label>
+                <input type="text" id="interest" name="interest" required>
+                    <!-- form inputs go here -->
+                </form>
+                <!-- Submit button -->
+                <button id="rsvp-button">Submit RSVP</button>
+            </div>      
+        </div>
+        <!-- success modal
+
+        Purpose:
+        - Modal that appears when a user successfully signs up for the event
+        - Contains a personalized message and image
+
+        When To Modify:
+        - [ ] Project 9 (REQUIRED FEATURE)
+        - [ ] Project 9 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <div id="modal-item">
+                    <p id="modal-text">Thanks for RSVPing!</p>
+                    <button id="close-modal">Close</button>
+                </div>
+                <div id="modal-item">
+                    <img src="./img/CodepathImage7.png" width="200" alt="Success Image" />
+                </div>
+            </div>
+        </div>
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="links">Links</h2>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="block-container" href="https://www.eventbrite.com/d/united-states/charity-and-causes--expos/">
+            <article>
+                <h3>Charity & causes events in United States</h3>
+                <p>An Eventbrite link to find other charity expositions in the United States.</p>
+            </article>
+        </a>
+        <a class="block-container" href="https://www.eventbrite.com/d/canada/charity-and-causes--expos/">
+            <article>
+                <h3>Charity & causes events in Canada</h3>
+                <p>An Eventbrite link to find other charity expositions in Canada.</p>
+            </article>
+        </a>
+        
+        <div class="footer-container">
+            <p>
+                Questions? Email <a href="mailto:wbhuiyan@stu.allstarcode.org" 
+                class="link"> wbhuiyan@stu.allstarcode.org </a> or <a href="mailto:wbhuiyan@buffalo.edu" 
+                class="link">   wbhuiyan@buffalo.edu </a>
+            </p>
+
+        </div>
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+    <script src="index.js"></script>
+    </body>
+</html>
